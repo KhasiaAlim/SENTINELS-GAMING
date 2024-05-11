@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ------------ MAIN COLORS ------------ */
+
+:root {
+    --MAIN-COLOR-1: #ffffff;
+    --MAIN-COLOR-2: #e5062f;
+    --MAIN-COLOR-3: #000000;
+}
+
+
+/* ------------ BODY LAYOUT ------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--MAIN-COLOR-3);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------ BODY - NAV BAR ------------ */
+
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   border-bottom-color: var(--MAIN-COLOR-2);
+   border-top-color: var(--MAIN-COLOR-3);
+   border-left-color: var(--MAIN-COLOR-3);
+   border-right-color: var(--MAIN-COLOR-3);
+   border-style: solid;
+   border-width: 1px;
+}
+
+.links-list {
+    list-style-type: none;
+}
+
+.links-list>li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: var(--MAIN-COLOR-1);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: var(--MAIN-COLOR-2);
+}
+
+
+#color-changer {
+    animation: color-change 1s infinite;
+}
+
+/* ------------ BODY - ICONS - OFFCANVAS ------------ */
+
+.offcanvas-body {
+    color: var(--MAIN-COLOR-2);
+}
+
+
+.offcanvas-body:hover {
+    color: var(--MAIN-COLOR-2);
+}
+
+#note {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-1 {
+    color: var(--MAIN-COLOR-3);
+    font-weight: 600;
+    background-color: var(--MAIN-COLOR-2);
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* ------------ BODY - NOTIFICATION-1 ------------ */
+
+.notification-1 {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom-color: var(--MAIN-COLOR-2);
+    border-top-color: var(--MAIN-COLOR-3);
+    border-left-color: var(--MAIN-COLOR-3);
+    border-right-color: var(--MAIN-COLOR-3);
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 50px;
+}
+
+.notification-1>p {
+    color: var(--MAIN-COLOR-2);
+    font-weight: 600;
+}
+
+.notification-1>h3 {
+    color: var(--MAIN-COLOR-1);
+    font-weight: 600;
+}
+
+.btn-2 {
+    color: var(--MAIN-COLOR-3);
+    background-color: var(--MAIN-COLOR-2);
+    padding: 6px 8px;
+    border-style: none;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ KEYFRAMES ------------ */
+
+@keyframes color-change {
+    0% {
+        color: var(--MAIN-COLOR-2);
+    }
+    50% {
+        color: var(--MAIN-COLOR-1);
+    }
+    100% {
+        color: var(--MAIN-COLOR-2);
+    }
+}
